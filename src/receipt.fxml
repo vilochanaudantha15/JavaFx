@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane style="-fx-background-color: #f0f2f5; -fx-padding: 30;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="receiptController">
+    <VBox alignment="CENTER" layoutX="50.0" layoutY="54.0" prefHeight="450.0" prefWidth="300.0" spacing="20.0" style="-fx-background-color: white; -fx-padding: 30; -fx-border-radius: 12; -fx-background-radius: 12; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 12, 0, 0, 8);">
+        
+        <!-- Café Name -->
+        <Label style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;" text="Golden Mac
+" />
+        
+        <!-- Title Label with modern typography -->
+        <Label style="-fx-font-size: 26px; -fx-font-weight: 600; -fx-text-fill: #2c3e50;" text="Receipt" />
+        
+        <!-- Displaying Product Information -->
+        <Label fx:id="receipt_productName" style="-fx-font-size: 14px; -fx-text-fill: #7f8c8d;" text="Product Name: --" />
+        <Label fx:id="receipt_quantity" style="-fx-font-size: 14px; -fx-text-fill: #7f8c8d;" text="Quantity: --" />
+        <Label fx:id="receipt_price" style="-fx-font-size: 14px; -fx-text-fill: #7f8c8d;" text="Price: --" />
+        
+        <!-- Total and Amount Details -->
+        <Label fx:id="receipt_totalPrice" style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #34495e;" text="Total Price: Rs. --" />
+        <Label fx:id="receipt_amountPaid" style="-fx-font-size: 14px; -fx-text-fill: #7f8c8d;" text="Amount Paid: Rs. --" />
+        <Label fx:id="receipt_change" style="-fx-font-size: 14px; -fx-text-fill: #7f8c8d;" text="Change: Rs. --" />
+
+        <!-- Modern Styled Button -->
+        <Button fx:id="printReceiptBtn" onAction="#printReceipt" style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 6; -fx-padding: 10 20; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 2);" text="Print Receipt" />
+    </VBox>
+</AnchorPane>

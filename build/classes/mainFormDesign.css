@@ -1,0 +1,91 @@
+.header{
+    -fx-background-color:linear-gradient(to bottom right, #29438a, #3a539b); /* Darker blue shades */
+    -fx-border-color:#fff;
+    -fx-border-width: 0 0 .8px 0;
+}
+.nav-form{
+    -fx-background-color:linear-gradient(to bottom right, #29438a, #3a539b); /* Matching blue tones */
+}
+
+.nav-btn{
+    -fx-background-color:transparent;
+    -fx-border-color:#fff;
+    -fx-border-width:.4px;
+    -fx-cursor:hand;
+    -fx-text-fill:#fff;
+    -fx-font-size:14px;
+}
+
+.nav-btn:hover{
+    -fx-background-color:#fff;
+    -fx-text-fill:#000;
+}
+.logout{
+    -fx-background-color:#29438a; /* Main blue color */
+    -fx-padding:5px;
+    -fx-cursor:hand;
+    -fx-background-radius:50px;
+}
+.logout:hover{
+    -fx-background-color:#bf1515; /* Slightly lighter blue for hover */
+}
+.shadow{
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.5), 5,0,0,0);
+}
+
+.white-bg{
+    -fx-background-color:#fff;
+}
+.radius{
+    -fx-background-radius: 8px;
+}
+
+.transparent{
+    -fx-background-color:transparent;
+}
+
+.table-view {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-border-color: linear-gradient(to bottom right, #29438a, #6683d1); /* Matching blue tones */
+    -fx-border-radius: 5px;
+    -fx-border-width: 1.5px;
+}
+
+/* Style for the column header background */
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to bottom right, #29438a, #6683d1); /* Matching blue tones */
+    -fx-background-insets: 0;
+    -fx-background-radius: 5px 5px 0 0;
+}
+
+/* Style for the column header cells */
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+/* Style for the header labels */
+.table-view .column-header .label {
+    -fx-text-fill: #fff;
+}
+
+/* Optionally, you might want to style the filter or cells */
+.table-view .filter {
+    -fx-background-color: transparent;
+    -fx-padding: 10px;
+}
+
+/* General cell styling, if you want to add more customization */
+.table-view .cell {
+    -fx-size: 40px;
+}
+
+.btn{
+     -fx-background-color: linear-gradient(to bottom right, #29438a, #6683d1); /* Matching blue tones */
+     -fx-cursor: hand;
+     -fx-text-fill: #fff;
+     -fx-font-size:14px;
+}
+.btn:hover{
+     -fx-background-color: linear-gradient(to bottom right, #3a539b, #6683d1); /* Slightly lighter blue tones */
+}

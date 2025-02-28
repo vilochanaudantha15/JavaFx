@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@LoginDesign.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLController">
+    <children>
+        <!-- Registration Form -->
+        <AnchorPane fx:id="SU_signupForm" layoutX="0.0" layoutY="0.0" prefHeight="300.0" prefWidth="600.0">
+            <children>
+                <!-- Side form for switching to login -->
+                <AnchorPane layoutX="300.0" layoutY="5.0" prefHeight="404.0" prefWidth="300.0" styleClass="gradient">
+                    <children>
+                        <ImageView fitWidth="260.0" layoutX="20.0" layoutY="20.0" preserveRatio="true" styleClass="image-size">
+    <image>
+        <Image url="file:/C:/Users/vilochana%20udantha/Desktop/auth.png" />
+    </image>
+</ImageView>
+                        <Button fx:id="side_alreadyHave" layoutX="40.0" layoutY="346.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="220.0" text="Already have an account" />
+                        <Label layoutX="87.0" layoutY="299.0" prefHeight="40.0" prefWidth="147.0" text="Create Account" textFill="WHITE">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="92.0" layoutY="225.0" text="Café Serenity" textFill="WHITE">
+                            <font>
+                                <Font size="17.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+
+                <!-- Signup form content -->
+                <AnchorPane layoutX="0.0" layoutY="7.0" prefHeight="400.0" prefWidth="300.0" styleClass="white-form">
+                    <children>
+                        <Label layoutX="40.0" layoutY="43.0" prefHeight="40.0" prefWidth="174.0" text="Register Account" textFill="#0f6789">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="SU_Username" layoutX="40.0" layoutY="118.0" prefHeight="30.0" prefWidth="220.0" promptText="Username" />
+                        <PasswordField fx:id="SU_password" layoutX="40.0" layoutY="158.0" prefHeight="30.0" prefWidth="220.0" promptText="Password" />
+                        <ComboBox fx:id="SU_question" layoutX="40.0" layoutY="200.0" prefHeight="30.0" prefWidth="220.0" promptText="Question" />
+                        <TextField fx:id="SU_answer" layoutX="40.0" layoutY="242.0" prefHeight="30.0" prefWidth="220.0" promptText="Answer" />
+                        <Button fx:id="SU_signupBtn" layoutX="40.0" layoutY="319.0" mnemonicParsing="false" onAction="#regBtn" prefHeight="40.0" prefWidth="220.0" styleClass="login-btn" text="Sign Up" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+
+        <!-- Login Form -->
+        <AnchorPane fx:id="Si_loginForm" layoutX="600.0" layoutY="0.0" prefHeight="400.0" prefWidth="600.0">
+            <children>
+                <!-- Side form for switching to signup -->
+                <AnchorPane layoutX="0.0" layoutY="5.0" prefHeight="404.0" prefWidth="300.0" styleClass="gradient">
+                    <children>
+                       <ImageView fitWidth="260.0" layoutX="20.0" layoutY="20.0" preserveRatio="true" styleClass="image-size">
+    <image>
+        <Image url="file:/C:/Users/vilochana%20udantha/Desktop/auth.png" />
+    </image>
+</ImageView>
+                        <Button fx:id="Side_CreateBtn" layoutX="40.0" layoutY="346.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="220.0" text="Create New Account" />
+                        <Label layoutX="87.0" layoutY="299.0" prefHeight="40.0" prefWidth="147.0" text="Create Account" textFill="WHITE">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="92.0" layoutY="225.0" text="Golden Mac
+ " textFill="WHITE">
+                            <font>
+                                <Font size="17.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+
+                <!-- Login form content -->
+                <AnchorPane layoutX="300.0" prefHeight="411.0" prefWidth="300.0" styleClass="white-form">
+                    <children>
+                        <Label layoutX="40.0" layoutY="43.0" prefHeight="40.0" prefWidth="174.0" text="Login Account" textFill="#0f6789">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="Si_Username" layoutX="40.0" layoutY="156.0" prefHeight="30.0" prefWidth="220.0" promptText="Username" />
+                        <PasswordField fx:id="Si_password" layoutX="40.0" layoutY="200.0" prefHeight="30.0" prefWidth="220.0" promptText="Password" />
+                        <Button fx:id="Si_loginBtn" layoutX="40.0" layoutY="279.0" mnemonicParsing="false" onAction="#loginBtn" prefHeight="40.0" prefWidth="220.0" styleClass="login-btn" text="Login" />
+                        <Hyperlink fx:id="Si_forgot" layoutX="40.0" layoutY="247.0" text="Forgot Password?" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>

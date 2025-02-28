@@ -1,0 +1,67 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Aug 16, 2024, 10:41:47 PM
+    Author     : vilochana udantha
+*/
+
+.gradient{
+    -fx-background-color:linear-gradient(to bottom right, #29438a, #31b4e8); /* Updated to blue theme */
+}
+
+.white-form{
+    -fx-background-color:#fff;
+}
+
+.login-account-color{
+    -fx-text-fill: #29438a; /* Updated to blue theme */
+}
+
+.head-label{
+    -fx-border-color:#3a539b; /* Updated to blue theme */
+    -fx-border-width:0 0 0 3px;
+    -fx-padding:0 0 0 5px;
+}
+
+.login-btn{
+    -fx-background-color:linear-gradient(to bottom right, #29438a, #31b4e8); /* Updated to blue theme */
+    -fx-background-radius:5px;
+    -fx-cursor:hand;
+    -fx-text-fill:#fff;
+    -fx-font-size:14px;
+}
+
+.login-btn:hover{
+    -fx-background-color:linear-gradient(to bottom right, #3a539b, #31b4e8); /* Slightly lighter blue for hover */
+}
+
+.textfield{
+    -fx-background-color:transparent;
+    -fx-border-color:linear-gradient(to bottom right, #29438a, #31b4e8); /* Updated to blue theme */
+    -fx-border-width:.5px;
+}
+
+.textfield:focused{
+    -fx-border-width:1px;
+}
+
+.create-btn{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+    -fx-text-fill:#fff;
+    -fx-border-color:#fff;
+    -fx-border-width:1px;
+}
+
+.create-btn:hover{
+    -fx-background-color:#fff;
+    -fx-text-fill:#000;
+}
+
+/* New class for image dimensions */
+.image-size {
+    -fx-fit-width:250px;  /* Adjust width as needed */
+    -fx-fit-height: 250px; /* Adjust height as needed */
+}

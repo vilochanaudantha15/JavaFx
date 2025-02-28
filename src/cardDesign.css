@@ -1,0 +1,26 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Sep 1, 2024, 12:12:09 PM
+    Author     : vilochana udantha
+*/
+
+.card{
+    -fx-background-color:#fff;
+    -fx-background-radius:5px;
+}
+.shadow{
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.5), 5,0,0,0);
+}
+
+.btn{
+      -fx-background-color: linear-gradient(to bottom right, #29438a, #6683d1); /* Matching blue tones */
+        -fx-cursor: hand;
+     -fx-text-fill: #fff;
+}
+.btn:hover{
+     -fx-background-color: linear-gradient(to bottom right, #3a539b, #6683d1); /* Slightly lighter blue tones */
+}
+
